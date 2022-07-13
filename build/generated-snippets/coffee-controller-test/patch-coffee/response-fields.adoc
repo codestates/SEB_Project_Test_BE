@@ -1,0 +1,24 @@
+|===
+|Path|Type|Description
+
+|`+data.coffeeId+`
+|`+Number+`
+|1
+
+|`+data.korName+`
+|`+String+`
+|아메리카노
+
+|`+data.engName+`
+|`+String+`
+|Americano
+
+|`+data.price+`
+|`+Number+`
+|2500
+
+|`+data.coffeeStatus+`
+|`+String+`
+|OUT OF STOCK
+
+|===

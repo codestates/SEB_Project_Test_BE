@@ -1,0 +1,72 @@
+[source,options="nowrap"]
+----
+{
+  "data" : [ {
+    "orderId" : 11,
+    "memberId" : 2,
+    "orderStatus" : "ORDER_REQUEST",
+    "orderCoffees" : [ {
+      "coffeeId" : 2,
+      "korName" : "아메리카노4",
+      "engName" : "Americano",
+      "price" : 2500,
+      "quantity" : 3
+    } ],
+    "createdAt" : "2022-07-12T14:46:45.332844"
+  }, {
+    "orderId" : 10,
+    "memberId" : 2,
+    "orderStatus" : "ORDER_REQUEST",
+    "orderCoffees" : [ {
+      "coffeeId" : 2,
+      "korName" : "아메리카노4",
+      "engName" : "Americano",
+      "price" : 2500,
+      "quantity" : 3
+    } ],
+    "createdAt" : "2022-07-12T14:46:45.332464"
+  }, {
+    "orderId" : 9,
+    "memberId" : 2,
+    "orderStatus" : "ORDER_REQUEST",
+    "orderCoffees" : [ {
+      "coffeeId" : 2,
+      "korName" : "아메리카노4",
+      "engName" : "Americano",
+      "price" : 2500,
+      "quantity" : 3
+    } ],
+    "createdAt" : "2022-07-12T14:46:45.331969"
+  }, {
+    "orderId" : 8,
+    "memberId" : 2,
+    "orderStatus" : "ORDER_REQUEST",
+    "orderCoffees" : [ {
+      "coffeeId" : 2,
+      "korName" : "아메리카노4",
+      "engName" : "Americano",
+      "price" : 2500,
+      "quantity" : 3
+    } ],
+    "createdAt" : "2022-07-12T14:46:45.331616"
+  }, {
+    "orderId" : 7,
+    "memberId" : 2,
+    "orderStatus" : "ORDER_REQUEST",
+    "orderCoffees" : [ {
+      "coffeeId" : 2,
+      "korName" : "아메리카노4",
+      "engName" : "Americano",
+      "price" : 2500,
+      "quantity" : 3
+    } ],
+    "createdAt" : "2022-07-12T14:46:45.331209"
+  } ],
+  "pageInfo" : {
+    "page" : 1,
+    "size" : 5,
+    "totalElements" : 10,
+    "totalPages" : 2
+  }
+}
+----

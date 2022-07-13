@@ -1,0 +1,12 @@
+[source,options="nowrap"]
+----
+{
+  "data" : {
+    "coffeeId" : 3,
+    "korName" : "아메리카노",
+    "engName" : "Americano",
+    "price" : 2500,
+    "coffeeStatus" : "FOR SALE"
+  }
+}
+----

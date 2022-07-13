@@ -1,0 +1,12 @@
+[source,options="nowrap"]
+----
+{
+  "data" : {
+    "memberId" : 8,
+    "email" : "hgd01@gmail.com",
+    "name" : "hong gil dong",
+    "phone" : "010-1111-1111",
+    "memberStatus" : "SLEEP MEMBER"
+  }
+}
+----

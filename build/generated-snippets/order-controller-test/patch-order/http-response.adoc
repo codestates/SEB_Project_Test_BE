@@ -1,0 +1,22 @@
+[source,http,options="nowrap"]
+----
+HTTP/1.1 200 OK
+Content-Type: application/json;charset=UTF-8
+Content-Length: 310
+
+{
+  "data" : {
+    "orderId" : 12,
+    "memberId" : 3,
+    "orderStatus" : "ORDER_CANCEL",
+    "orderCoffees" : [ {
+      "coffeeId" : 3,
+      "korName" : "아메리카노",
+      "engName" : "Americano",
+      "price" : 2500,
+      "quantity" : 3
+    } ],
+    "createdAt" : "2022-07-12T14:46:45.371481"
+  }
+}
+----

@@ -1,0 +1,5 @@
+[source,bash]
+----
+$ http GET 'http://localhost:8080/coffees/3' \
+    'Content-Type:application/json;charset=UTF-8'
+----

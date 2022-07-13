@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.codestates.srdemoref.SrDemoRefApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-07-11T10:59:42" hostname="Hojinui-MacBookAir.local" time="0.001">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.codestates.srdemoref.SrDemoRefApplicationTests" time="0.001"/>
+  <system-out><![CDATA[2022-07-11 18:59:41.787  INFO 35302 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.codestates.srdemoref.SrDemoRefApplicationTests], using SpringBootContextLoader
+2022-07-11 18:59:41.788  INFO 35302 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.codestates.srdemoref.SrDemoRefApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-07-11 18:59:41.788  INFO 35302 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.codestates.srdemoref.SrDemoRefApplicationTests]: SrDemoRefApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-07-11 18:59:41.791  INFO 35302 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.codestates.srdemoref.SrDemoRefApplication for test class com.codestates.srdemoref.SrDemoRefApplicationTests
+2022-07-11 18:59:41.792  INFO 35302 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-07-11 18:59:41.792  INFO 35302 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@71f9f8ba, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7685912e, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3ea3b20d, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@17856f0, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3ffa424d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@652cb87d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@463c5d0f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5304cee, org.springframework.test.context.event.EventPublishingTestExecutionListener@68b59e2f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@685a3c14, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4c2ad035, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4b7ab262, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@f7a19c4, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@36f93ea3, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2c48eb31]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.1)
+
+2022-07-11 18:59:41.801  INFO 35302 --- [    Test worker] c.c.srdemoref.SrDemoRefApplicationTests  : Starting SrDemoRefApplicationTests using Java 11.0.15 on Hojinui-MacBookAir.local with PID 35302 (started by hojinjang in /Users/hojinjang/Documents/develop/personalproject/sr-demo-ref)
+2022-07-11 18:59:41.801  INFO 35302 --- [    Test worker] c.c.srdemoref.SrDemoRefApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2022-07-11 18:59:41.901  INFO 35302 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-11 18:59:41.910  INFO 35302 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 4 JPA repository interfaces.
+2022-07-11 18:59:41.965  INFO 35302 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-11 18:59:41.967  INFO 35302 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-07-11 18:59:41.967  INFO 35302 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-07-11 18:59:41.967  INFO 35302 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Hibernate: drop table if exists coffee CASCADE 
+Hibernate: drop table if exists member CASCADE 
+Hibernate: drop table if exists order_coffee CASCADE 
+Hibernate: drop table if exists orders CASCADE 
+Hibernate: drop table if exists review CASCADE 
+Hibernate: drop table if exists stamp CASCADE 
+Hibernate: create table coffee (coffee_id bigint generated by default as identity, coffee_code varchar(3) not null, coffee_status varchar(20) not null, created_at timestamp not null, eng_name varchar(100) not null, kor_name varchar(100) not null, price integer not null, updated_at timestamp not null, primary key (coffee_id))
+Hibernate: create table member (member_id bigint generated by default as identity, created_at timestamp not null, email varchar(255) not null, member_status varchar(20) not null, name varchar(100) not null, phone varchar(13) not null, updated_at timestamp not null, primary key (member_id))
+Hibernate: create table order_coffee (order_coffee_id bigint generated by default as identity, quantity integer not null, coffee_id bigint, order_id bigint, primary key (order_coffee_id))
+Hibernate: create table orders (order_id bigint generated by default as identity, created_at timestamp not null, order_status varchar(255), updated_at timestamp not null, member_id bigint, primary key (order_id))
+Hibernate: create table review (review_id bigint generated by default as identity, content varchar(255) not null, created_at timestamp not null, image varchar(255), title varchar(100) not null, updated_at timestamp not null, member_id bigint, order_id bigint, primary key (review_id))
+Hibernate: create table stamp (stamp_id bigint generated by default as identity, created_at timestamp, stamp_count integer, updated_at timestamp, member_id bigint, primary key (stamp_id))
+Hibernate: alter table coffee add constraint UK_m12kom436k9e8fhohvqdnfakd unique (coffee_code)
+Hibernate: alter table member add constraint UK_mbmcqelty0fbrvxp1q58dn57t unique (email)
+Hibernate: alter table member add constraint UK_6ithqvsvrcawbi9dtxu0ttsny unique (phone)
+Hibernate: alter table order_coffee add constraint FKaddeel2etjqaqm0n5728r9sab foreign key (coffee_id) references coffee
+Hibernate: alter table order_coffee add constraint FKe95q1ho0v6ug022j3yx82e6eq foreign key (order_id) references orders
+Hibernate: alter table orders add constraint FKpktxwhj3x9m4gth5ff6bkqgeb foreign key (member_id) references member
+Hibernate: alter table review add constraint FKk0ccx5i4ci2wd70vegug074w1 foreign key (member_id) references member
+Hibernate: alter table review add constraint FKnkc5s3da46cbx8oeqrfhnm7es foreign key (order_id) references orders
+Hibernate: alter table stamp add constraint FK1oscorlxc4ywlhvbucl1j2q9q foreign key (member_id) references member
+2022-07-11 18:59:42.020  INFO 35302 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-11 18:59:42.021  INFO 35302 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-11 18:59:42.114  WARN 35302 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-11 18:59:42.182  INFO 35302 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:test'
+2022-07-11 18:59:42.287  INFO 35302 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-11 18:59:42.302  INFO 35302 --- [    Test worker] c.c.srdemoref.SrDemoRefApplicationTests  : Started SrDemoRefApplicationTests in 0.508 seconds (JVM running for 4.052)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

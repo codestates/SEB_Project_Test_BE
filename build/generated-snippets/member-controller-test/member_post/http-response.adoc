@@ -1,0 +1,16 @@
+[source,http,options="nowrap"]
+----
+HTTP/1.1 201 Created
+Content-Type: application/json;charset=UTF-8
+Content-Length: 171
+
+{
+  "data" : {
+    "memberId" : 9,
+    "email" : "hgd01@gmail.com",
+    "name" : "hong gil dong",
+    "phone" : "010-1111-1111",
+    "memberStatus" : "ACTIVE MEMBER"
+  }
+}
+----

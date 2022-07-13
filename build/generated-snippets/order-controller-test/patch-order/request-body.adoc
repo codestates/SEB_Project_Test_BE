@@ -1,0 +1,7 @@
+[source,options="nowrap"]
+----
+{
+  "orderId" : 12,
+  "orderStatus" : "ORDER_CANCEL"
+}
+----

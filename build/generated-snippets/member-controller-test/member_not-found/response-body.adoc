@@ -1,0 +1,9 @@
+[source,options="nowrap"]
+----
+{
+  "status" : 404,
+  "message" : "Member not found",
+  "fieldErrors" : null,
+  "violationErrors" : null
+}
+----

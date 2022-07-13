@@ -1,0 +1,12 @@
+[source,http,options="nowrap"]
+----
+PATCH /orders/12 HTTP/1.1
+Content-Type: application/json;charset=UTF-8
+Content-Length: 54
+Host: localhost:8080
+
+{
+  "orderId" : 12,
+  "orderStatus" : "ORDER_CANCEL"
+}
+----

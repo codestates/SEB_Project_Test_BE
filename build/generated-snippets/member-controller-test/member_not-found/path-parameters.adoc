@@ -1,0 +1,8 @@
+.+/members/{member-id}+
+|===
+|Parameter|Description
+
+|`+member-id+`
+|memberId
+
+|===

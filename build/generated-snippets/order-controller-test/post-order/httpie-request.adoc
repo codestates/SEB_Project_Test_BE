@@ -1,0 +1,11 @@
+[source,bash]
+----
+$ echo '{
+  "memberId" : 5,
+  "orderCoffees" : [ {
+    "coffeeId" : 5,
+    "quantity" : 3
+  } ]
+}' | http POST 'http://localhost:8080/orders' \
+    'Content-Type:application/json;charset=UTF-8'
+----

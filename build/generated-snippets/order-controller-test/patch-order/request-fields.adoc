@@ -1,0 +1,12 @@
+|===
+|Path|Type|Description
+
+|`+orderId+`
+|`+Number+`
+|orderId
+
+|`+orderStatus+`
+|`+String+`
+|ORDER_CANCEL
+
+|===

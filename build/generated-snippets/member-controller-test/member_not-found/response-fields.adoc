@@ -1,0 +1,20 @@
+|===
+|Path|Type|Description
+
+|`+status+`
+|`+Number+`
+|404
+
+|`+message+`
+|`+String+`
+|Member not found
+
+|`+fieldErrors+`
+|`+Null+`
+|null
+
+|`+violationErrors+`
+|`+Null+`
+|null
+
+|===

@@ -1,0 +1,16 @@
+|===
+|Path|Type|Description
+
+|`+email+`
+|`+String+`
+|email
+
+|`+name+`
+|`+String+`
+|name
+
+|`+phone+`
+|`+String+`
+|pone number
+
+|===

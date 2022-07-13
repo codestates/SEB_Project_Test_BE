@@ -1,0 +1,16 @@
+|===
+|Path|Type|Description
+
+|`+memberId+`
+|`+Number+`
+|memberId
+
+|`+orderCoffees[].coffeeId+`
+|`+Number+`
+|coffeeId
+
+|`+orderCoffees[].quantity+`
+|`+Number+`
+|quantity
+
+|===

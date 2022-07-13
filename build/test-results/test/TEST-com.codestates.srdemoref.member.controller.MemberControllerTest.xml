@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.codestates.srdemoref.member.controller.MemberControllerTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-07-11T10:59:42" hostname="Hojinui-MacBookAir.local" time="0.127">
+  <properties/>
+  <testcase name="DELETE_Member TEST" classname="com.codestates.srdemoref.member.controller.MemberControllerTest" time="0.014"/>
+  <testcase name="GET_Member TEST" classname="com.codestates.srdemoref.member.controller.MemberControllerTest" time="0.014"/>
+  <testcase name="Member not found TEST" classname="com.codestates.srdemoref.member.controller.MemberControllerTest" time="0.014"/>
+  <testcase name="PATCH_Member TEST" classname="com.codestates.srdemoref.member.controller.MemberControllerTest" time="0.024"/>
+  <testcase name="post_Member TEST" classname="com.codestates.srdemoref.member.controller.MemberControllerTest" time="0.014"/>
+  <testcase name="GET_Members TEST" classname="com.codestates.srdemoref.member.controller.MemberControllerTest" time="0.045"/>
+  <system-out><![CDATA[2022-07-11 18:59:42.445  INFO 35302 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.codestates.srdemoref.member.controller.MemberControllerTest], using SpringBootContextLoader
+2022-07-11 18:59:42.446  INFO 35302 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.codestates.srdemoref.member.controller.MemberControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-07-11 18:59:42.446  INFO 35302 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.codestates.srdemoref.member.controller.MemberControllerTest]: MemberControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-07-11 18:59:42.450  INFO 35302 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.codestates.srdemoref.SrDemoRefApplication for test class com.codestates.srdemoref.member.controller.MemberControllerTest
+2022-07-11 18:59:42.451  INFO 35302 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-07-11 18:59:42.451  INFO 35302 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@369773fd, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@47d0127f, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@c4ef770, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@228f15de, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2f8a82e9, org.springframework.test.context.support.DirtiesContextTestExecutionListener@688e2e8d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1380a19b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@49fb77d0, org.springframework.test.context.event.EventPublishingTestExecutionListener@321d39cc, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2bfe9344, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3de473d9, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2fb3c642, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@743b4921, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@2b009051, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@35645453]
+2022-07-11 18:59:42.454  INFO 35302 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@42675041 testClass = MemberControllerTest, testInstance = com.codestates.srdemoref.member.controller.MemberControllerTest@81cba04, testMethod = member_delete@MemberControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@15c46930 testClass = MemberControllerTest, locations = '{}', classes = '{class com.codestates.srdemoref.SrDemoRefApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7446d8d5, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@63da79bb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6b9ce1bf, [ImportsContextCustomizer@2c635953 key = [@org.springframework.test.context.BootstrapWith(value=org.springframework.boot.test.context.SpringBootTestContextBootstrapper.class), @org.springframework.context.annotation.Import(value={org.springframework.boot.autoconfigure.ImportAutoConfigurationImportSelector.class}), @org.springframework.boot.autoconfigure.ImportAutoConfiguration(value={}, exclude={}, classes={}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.restdocs", skip=NO), @org.springframework.boot.test.context.SpringBootTest(args={}, webEnvironment=MOCK, value={}, properties={}, classes={}), @org.springframework.boot.test.autoconfigure.restdocs.AutoConfigureRestDocs(uriScheme="http", outputDir="", uriPort=8080, value="", uriHost="localhost"), @org.springframework.context.annotation.Import(value={com.codestates.srdemoref.restDocUtils.RestDocsConfig.class}), @org.springframework.transaction.annotation.Transactional(propagation=REQUIRED, rollbackForClassName={}, readOnly=false, isolation=DEFAULT, transactionManager="", timeoutString="", label={}, noRollbackFor={}, noRollbackForClassName={}, value="", timeout=-1, rollbackFor={}), @org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc(webDriverEnabled=true, print=DEFAULT, webClientEnabled=true, addFilters=true, printOnlyOnFailure=true), @org.springframework.context.annotation.Import(value={org.springframework.boot.test.autoconfigure.restdocs.RestDocumentationContextProviderRegistrar.class}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.mockmvc", skip=NO)]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5b04476e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2783717b, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5ed731d0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@747f281], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@75f9a35a]; rollback [true]
+2022-07-11 18:59:42.455  INFO 35302 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-07-11 18:59:42.455  INFO 35302 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-07-11 18:59:42.455  INFO 35302 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /members/1
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.codestates.srdemoref.member.controller.MemberController
+           Method = com.codestates.srdemoref.member.controller.MemberController#deleteMember(long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 204
+    Error message = null
+          Headers = []
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+Hibernate: delete from member where member_id=?
+Hibernate: select memberenti0_.member_id as member_i1_1_, memberenti0_.created_at as created_2_1_, memberenti0_.email as email3_1_, memberenti0_.member_status as member_s4_1_, memberenti0_.name as name5_1_, memberenti0_.phone as phone6_1_, memberenti0_.updated_at as updated_7_1_ from member memberenti0_
+2022-07-11 18:59:42.466  INFO 35302 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@42675041 testClass = MemberControllerTest, testInstance = com.codestates.srdemoref.member.controller.MemberControllerTest@81cba04, testMethod = member_delete@MemberControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@15c46930 testClass = MemberControllerTest, locations = '{}', classes = '{class com.codestates.srdemoref.SrDemoRefApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7446d8d5, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@63da79bb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6b9ce1bf, [ImportsContextCustomizer@2c635953 key = [@org.springframework.test.context.BootstrapWith(value=org.springframework.boot.test.context.SpringBootTestContextBootstrapper.class), @org.springframework.context.annotation.Import(value={org.springframework.boot.autoconfigure.ImportAutoConfigurationImportSelector.class}), @org.springframework.boot.autoconfigure.ImportAutoConfiguration(value={}, exclude={}, classes={}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.restdocs", skip=NO), @org.springframework.boot.test.context.SpringBootTest(args={}, webEnvironment=MOCK, value={}, properties={}, classes={}), @org.springframework.boot.test.autoconfigure.restdocs.AutoConfigureRestDocs(uriScheme="http", outputDir="", uriPort=8080, value="", uriHost="localhost"), @org.springframework.context.annotation.Import(value={com.codestates.srdemoref.restDocUtils.RestDocsConfig.class}), @org.springframework.transaction.annotation.Transactional(propagation=REQUIRED, rollbackForClassName={}, readOnly=false, isolation=DEFAULT, transactionManager="", timeoutString="", label={}, noRollbackFor={}, noRollbackForClassName={}, value="", timeout=-1, rollbackFor={}), @org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc(webDriverEnabled=true, print=DEFAULT, webClientEnabled=true, addFilters=true, printOnlyOnFailure=true), @org.springframework.context.annotation.Import(value={org.springframework.boot.test.autoconfigure.restdocs.RestDocumentationContextProviderRegistrar.class}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.mockmvc", skip=NO)]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5b04476e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2783717b, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5ed731d0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@747f281], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]
+2022-07-11 18:59:42.467  INFO 35302 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@42675041 testClass = MemberControllerTest, testInstance = com.codestates.srdemoref.member.controller.MemberControllerTest@39ee039d, testMethod = member_get@MemberControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@15c46930 testClass = MemberControllerTest, locations = '{}', classes = '{class com.codestates.srdemoref.SrDemoRefApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7446d8d5, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@63da79bb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6b9ce1bf, [ImportsContextCustomizer@2c635953 key = [@org.springframework.test.context.BootstrapWith(value=org.springframework.boot.test.context.SpringBootTestContextBootstrapper.class), @org.springframework.context.annotation.Import(value={org.springframework.boot.autoconfigure.ImportAutoConfigurationImportSelector.class}), @org.springframework.boot.autoconfigure.ImportAutoConfiguration(value={}, exclude={}, classes={}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.restdocs", skip=NO), @org.springframework.boot.test.context.SpringBootTest(args={}, webEnvironment=MOCK, value={}, properties={}, classes={}), @org.springframework.boot.test.autoconfigure.restdocs.AutoConfigureRestDocs(uriScheme="http", outputDir="", uriPort=8080, value="", uriHost="localhost"), @org.springframework.context.annotation.Import(value={com.codestates.srdemoref.restDocUtils.RestDocsConfig.class}), @org.springframework.transaction.annotation.Transactional(propagation=REQUIRED, rollbackForClassName={}, readOnly=false, isolation=DEFAULT, transactionManager="", timeoutString="", label={}, noRollbackFor={}, noRollbackForClassName={}, value="", timeout=-1, rollbackFor={}), @org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc(webDriverEnabled=true, print=DEFAULT, webClientEnabled=true, addFilters=true, printOnlyOnFailure=true), @org.springframework.context.annotation.Import(value={org.springframework.boot.test.autoconfigure.restdocs.RestDocumentationContextProviderRegistrar.class}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.mockmvc", skip=NO)]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5b04476e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2783717b, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5ed731d0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@747f281], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@75f9a35a]; rollback [true]
+2022-07-11 18:59:42.468  INFO 35302 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-07-11 18:59:42.468  INFO 35302 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-07-11 18:59:42.468  INFO 35302 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /members/2
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.codestates.srdemoref.member.controller.MemberController
+           Method = com.codestates.srdemoref.member.controller.MemberController#getMember(long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+     Content type = application/json;charset=UTF-8
+             Body = {"data":{"memberId":2,"email":"hgd01@gmail.com","name":"hong gil dong","phone":"010-1111-1111","memberStatus":"ACTIVE MEMBER"}}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+Hibernate: select memberenti0_.member_id as member_i1_1_, memberenti0_.created_at as created_2_1_, memberenti0_.email as email3_1_, memberenti0_.member_status as member_s4_1_, memberenti0_.name as name5_1_, memberenti0_.phone as phone6_1_, memberenti0_.updated_at as updated_7_1_ from member memberenti0_
+Hibernate: delete from member where member_id=?
+2022-07-11 18:59:42.480  INFO 35302 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@42675041 testClass = MemberControllerTest, testInstance = com.codestates.srdemoref.member.controller.MemberControllerTest@39ee039d, testMethod = member_get@MemberControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@15c46930 testClass = MemberControllerTest, locations = '{}', classes = '{class com.codestates.srdemoref.SrDemoRefApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7446d8d5, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@63da79bb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6b9ce1bf, [ImportsContextCustomizer@2c635953 key = [@org.springframework.test.context.BootstrapWith(value=org.springframework.boot.test.context.SpringBootTestContextBootstrapper.class), @org.springframework.context.annotation.Import(value={org.springframework.boot.autoconfigure.ImportAutoConfigurationImportSelector.class}), @org.springframework.boot.autoconfigure.ImportAutoConfiguration(value={}, exclude={}, classes={}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.restdocs", skip=NO), @org.springframework.boot.test.context.SpringBootTest(args={}, webEnvironment=MOCK, value={}, properties={}, classes={}), @org.springframework.boot.test.autoconfigure.restdocs.AutoConfigureRestDocs(uriScheme="http", outputDir="", uriPort=8080, value="", uriHost="localhost"), @org.springframework.context.annotation.Import(value={com.codestates.srdemoref.restDocUtils.RestDocsConfig.class}), @org.springframework.transaction.annotation.Transactional(propagation=REQUIRED, rollbackForClassName={}, readOnly=false, isolation=DEFAULT, transactionManager="", timeoutString="", label={}, noRollbackFor={}, noRollbackForClassName={}, value="", timeout=-1, rollbackFor={}), @org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc(webDriverEnabled=true, print=DEFAULT, webClientEnabled=true, addFilters=true, printOnlyOnFailure=true), @org.springframework.context.annotation.Import(value={org.springframework.boot.test.autoconfigure.restdocs.RestDocumentationContextProviderRegistrar.class}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.mockmvc", skip=NO)]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5b04476e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2783717b, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5ed731d0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@747f281], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]
+2022-07-11 18:59:42.481  INFO 35302 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@42675041 testClass = MemberControllerTest, testInstance = com.codestates.srdemoref.member.controller.MemberControllerTest@7d800902, testMethod = member_notFound@MemberControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@15c46930 testClass = MemberControllerTest, locations = '{}', classes = '{class com.codestates.srdemoref.SrDemoRefApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7446d8d5, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@63da79bb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6b9ce1bf, [ImportsContextCustomizer@2c635953 key = [@org.springframework.test.context.BootstrapWith(value=org.springframework.boot.test.context.SpringBootTestContextBootstrapper.class), @org.springframework.context.annotation.Import(value={org.springframework.boot.autoconfigure.ImportAutoConfigurationImportSelector.class}), @org.springframework.boot.autoconfigure.ImportAutoConfiguration(value={}, exclude={}, classes={}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.restdocs", skip=NO), @org.springframework.boot.test.context.SpringBootTest(args={}, webEnvironment=MOCK, value={}, properties={}, classes={}), @org.springframework.boot.test.autoconfigure.restdocs.AutoConfigureRestDocs(uriScheme="http", outputDir="", uriPort=8080, value="", uriHost="localhost"), @org.springframework.context.annotation.Import(value={com.codestates.srdemoref.restDocUtils.RestDocsConfig.class}), @org.springframework.transaction.annotation.Transactional(propagation=REQUIRED, rollbackForClassName={}, readOnly=false, isolation=DEFAULT, transactionManager="", timeoutString="", label={}, noRollbackFor={}, noRollbackForClassName={}, value="", timeout=-1, rollbackFor={}), @org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc(webDriverEnabled=true, print=DEFAULT, webClientEnabled=true, addFilters=true, printOnlyOnFailure=true), @org.springframework.context.annotation.Import(value={org.springframework.boot.test.autoconfigure.restdocs.RestDocumentationContextProviderRegistrar.class}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.mockmvc", skip=NO)]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5b04476e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2783717b, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5ed731d0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@747f281], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@75f9a35a]; rollback [true]
+2022-07-11 18:59:42.482  INFO 35302 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-07-11 18:59:42.482  INFO 35302 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-07-11 18:59:42.482  INFO 35302 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+Hibernate: select memberenti0_.member_id as member_i1_1_0_, memberenti0_.created_at as created_2_1_0_, memberenti0_.email as email3_1_0_, memberenti0_.member_status as member_s4_1_0_, memberenti0_.name as name5_1_0_, memberenti0_.phone as phone6_1_0_, memberenti0_.updated_at as updated_7_1_0_, stampentit1_.stamp_id as stamp_id1_5_1_, stampentit1_.created_at as created_2_5_1_, stampentit1_.member_id as member_i5_5_1_, stampentit1_.stamp_count as stamp_co3_5_1_, stampentit1_.updated_at as updated_4_5_1_ from member memberenti0_ left outer join stamp stampentit1_ on memberenti0_.member_id=stampentit1_.member_id where memberenti0_.member_id=?
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /members/1
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.codestates.srdemoref.member.controller.MemberController
+           Method = com.codestates.srdemoref.member.controller.MemberController#getMember(long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = com.codestates.srdemoref.exception.BusinessLogicException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+     Content type = application/json;charset=UTF-8
+             Body = {"status":404,"message":"Member not found","fieldErrors":null,"violationErrors":null}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+Hibernate: select memberenti0_.member_id as member_i1_1_, memberenti0_.created_at as created_2_1_, memberenti0_.email as email3_1_, memberenti0_.member_status as member_s4_1_, memberenti0_.name as name5_1_, memberenti0_.phone as phone6_1_, memberenti0_.updated_at as updated_7_1_ from member memberenti0_
+2022-07-11 18:59:42.494  INFO 35302 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@42675041 testClass = MemberControllerTest, testInstance = com.codestates.srdemoref.member.controller.MemberControllerTest@7d800902, testMethod = member_notFound@MemberControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@15c46930 testClass = MemberControllerTest, locations = '{}', classes = '{class com.codestates.srdemoref.SrDemoRefApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7446d8d5, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@63da79bb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6b9ce1bf, [ImportsContextCustomizer@2c635953 key = [@org.springframework.test.context.BootstrapWith(value=org.springframework.boot.test.context.SpringBootTestContextBootstrapper.class), @org.springframework.context.annotation.Import(value={org.springframework.boot.autoconfigure.ImportAutoConfigurationImportSelector.class}), @org.springframework.boot.autoconfigure.ImportAutoConfiguration(value={}, exclude={}, classes={}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.restdocs", skip=NO), @org.springframework.boot.test.context.SpringBootTest(args={}, webEnvironment=MOCK, value={}, properties={}, classes={}), @org.springframework.boot.test.autoconfigure.restdocs.AutoConfigureRestDocs(uriScheme="http", outputDir="", uriPort=8080, value="", uriHost="localhost"), @org.springframework.context.annotation.Import(value={com.codestates.srdemoref.restDocUtils.RestDocsConfig.class}), @org.springframework.transaction.annotation.Transactional(propagation=REQUIRED, rollbackForClassName={}, readOnly=false, isolation=DEFAULT, transactionManager="", timeoutString="", label={}, noRollbackFor={}, noRollbackForClassName={}, value="", timeout=-1, rollbackFor={}), @org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc(webDriverEnabled=true, print=DEFAULT, webClientEnabled=true, addFilters=true, printOnlyOnFailure=true), @org.springframework.context.annotation.Import(value={org.springframework.boot.test.autoconfigure.restdocs.RestDocumentationContextProviderRegistrar.class}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.mockmvc", skip=NO)]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5b04476e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2783717b, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5ed731d0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@747f281], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]
+2022-07-11 18:59:42.495  INFO 35302 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@42675041 testClass = MemberControllerTest, testInstance = com.codestates.srdemoref.member.controller.MemberControllerTest@7940d27b, testMethod = member_patch@MemberControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@15c46930 testClass = MemberControllerTest, locations = '{}', classes = '{class com.codestates.srdemoref.SrDemoRefApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7446d8d5, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@63da79bb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6b9ce1bf, [ImportsContextCustomizer@2c635953 key = [@org.springframework.test.context.BootstrapWith(value=org.springframework.boot.test.context.SpringBootTestContextBootstrapper.class), @org.springframework.context.annotation.Import(value={org.springframework.boot.autoconfigure.ImportAutoConfigurationImportSelector.class}), @org.springframework.boot.autoconfigure.ImportAutoConfiguration(value={}, exclude={}, classes={}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.restdocs", skip=NO), @org.springframework.boot.test.context.SpringBootTest(args={}, webEnvironment=MOCK, value={}, properties={}, classes={}), @org.springframework.boot.test.autoconfigure.restdocs.AutoConfigureRestDocs(uriScheme="http", outputDir="", uriPort=8080, value="", uriHost="localhost"), @org.springframework.context.annotation.Import(value={com.codestates.srdemoref.restDocUtils.RestDocsConfig.class}), @org.springframework.transaction.annotation.Transactional(propagation=REQUIRED, rollbackForClassName={}, readOnly=false, isolation=DEFAULT, transactionManager="", timeoutString="", label={}, noRollbackFor={}, noRollbackForClassName={}, value="", timeout=-1, rollbackFor={}), @org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc(webDriverEnabled=true, print=DEFAULT, webClientEnabled=true, addFilters=true, printOnlyOnFailure=true), @org.springframework.context.annotation.Import(value={org.springframework.boot.test.autoconfigure.restdocs.RestDocumentationContextProviderRegistrar.class}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.mockmvc", skip=NO)]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5b04476e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2783717b, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5ed731d0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@747f281], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@75f9a35a]; rollback [true]
+2022-07-11 18:59:42.496  INFO 35302 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-07-11 18:59:42.496  INFO 35302 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-07-11 18:59:42.496  INFO 35302 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+
+MockHttpServletRequest:
+      HTTP Method = PATCH
+      Request URI = /members/3
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"117"]
+             Body = {"memberId":3,"email":"hgd01@gmail.com","name":"hong gil dong","phone":"010-1111-1111","memberStatus":"MEMBER_SLEEP"}
+    Session Attrs = {}
+
+Handler:
+             Type = com.codestates.srdemoref.member.controller.MemberController
+           Method = com.codestates.srdemoref.member.controller.MemberController#patchMember(long, MemberPatchDto)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+     Content type = application/json;charset=UTF-8
+             Body = {"data":{"memberId":3,"email":"hgd01@gmail.com","name":"hong gil dong","phone":"010-1111-1111","memberStatus":"SLEEP MEMBER"}}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+Hibernate: update member set created_at=?, member_status=?, name=?, phone=?, updated_at=? where member_id=?
+Hibernate: select memberenti0_.member_id as member_i1_1_, memberenti0_.created_at as created_2_1_, memberenti0_.email as email3_1_, memberenti0_.member_status as member_s4_1_, memberenti0_.name as name5_1_, memberenti0_.phone as phone6_1_, memberenti0_.updated_at as updated_7_1_ from member memberenti0_
+Hibernate: delete from member where member_id=?
+2022-07-11 18:59:42.519  INFO 35302 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@42675041 testClass = MemberControllerTest, testInstance = com.codestates.srdemoref.member.controller.MemberControllerTest@7940d27b, testMethod = member_patch@MemberControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@15c46930 testClass = MemberControllerTest, locations = '{}', classes = '{class com.codestates.srdemoref.SrDemoRefApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7446d8d5, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@63da79bb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6b9ce1bf, [ImportsContextCustomizer@2c635953 key = [@org.springframework.test.context.BootstrapWith(value=org.springframework.boot.test.context.SpringBootTestContextBootstrapper.class), @org.springframework.context.annotation.Import(value={org.springframework.boot.autoconfigure.ImportAutoConfigurationImportSelector.class}), @org.springframework.boot.autoconfigure.ImportAutoConfiguration(value={}, exclude={}, classes={}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.restdocs", skip=NO), @org.springframework.boot.test.context.SpringBootTest(args={}, webEnvironment=MOCK, value={}, properties={}, classes={}), @org.springframework.boot.test.autoconfigure.restdocs.AutoConfigureRestDocs(uriScheme="http", outputDir="", uriPort=8080, value="", uriHost="localhost"), @org.springframework.context.annotation.Import(value={com.codestates.srdemoref.restDocUtils.RestDocsConfig.class}), @org.springframework.transaction.annotation.Transactional(propagation=REQUIRED, rollbackForClassName={}, readOnly=false, isolation=DEFAULT, transactionManager="", timeoutString="", label={}, noRollbackFor={}, noRollbackForClassName={}, value="", timeout=-1, rollbackFor={}), @org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc(webDriverEnabled=true, print=DEFAULT, webClientEnabled=true, addFilters=true, printOnlyOnFailure=true), @org.springframework.context.annotation.Import(value={org.springframework.boot.test.autoconfigure.restdocs.RestDocumentationContextProviderRegistrar.class}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.mockmvc", skip=NO)]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5b04476e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2783717b, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5ed731d0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@747f281], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]
+2022-07-11 18:59:42.520  INFO 35302 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@42675041 testClass = MemberControllerTest, testInstance = com.codestates.srdemoref.member.controller.MemberControllerTest@49de4263, testMethod = member_post@MemberControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@15c46930 testClass = MemberControllerTest, locations = '{}', classes = '{class com.codestates.srdemoref.SrDemoRefApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7446d8d5, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@63da79bb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6b9ce1bf, [ImportsContextCustomizer@2c635953 key = [@org.springframework.test.context.BootstrapWith(value=org.springframework.boot.test.context.SpringBootTestContextBootstrapper.class), @org.springframework.context.annotation.Import(value={org.springframework.boot.autoconfigure.ImportAutoConfigurationImportSelector.class}), @org.springframework.boot.autoconfigure.ImportAutoConfiguration(value={}, exclude={}, classes={}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.restdocs", skip=NO), @org.springframework.boot.test.context.SpringBootTest(args={}, webEnvironment=MOCK, value={}, properties={}, classes={}), @org.springframework.boot.test.autoconfigure.restdocs.AutoConfigureRestDocs(uriScheme="http", outputDir="", uriPort=8080, value="", uriHost="localhost"), @org.springframework.context.annotation.Import(value={com.codestates.srdemoref.restDocUtils.RestDocsConfig.class}), @org.springframework.transaction.annotation.Transactional(propagation=REQUIRED, rollbackForClassName={}, readOnly=false, isolation=DEFAULT, transactionManager="", timeoutString="", label={}, noRollbackFor={}, noRollbackForClassName={}, value="", timeout=-1, rollbackFor={}), @org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc(webDriverEnabled=true, print=DEFAULT, webClientEnabled=true, addFilters=true, printOnlyOnFailure=true), @org.springframework.context.annotation.Import(value={org.springframework.boot.test.autoconfigure.restdocs.RestDocumentationContextProviderRegistrar.class}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.mockmvc", skip=NO)]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5b04476e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2783717b, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5ed731d0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@747f281], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@75f9a35a]; rollback [true]
+2022-07-11 18:59:42.520  INFO 35302 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-07-11 18:59:42.520  INFO 35302 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-07-11 18:59:42.521  INFO 35302 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+Hibernate: select memberenti0_.member_id as member_i1_1_, memberenti0_.created_at as created_2_1_, memberenti0_.email as email3_1_, memberenti0_.member_status as member_s4_1_, memberenti0_.name as name5_1_, memberenti0_.phone as phone6_1_, memberenti0_.updated_at as updated_7_1_ from member memberenti0_ where memberenti0_.email=?
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /members
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"74"]
+             Body = {"email":"hgd01@gmail.com","name":"hong gil dong","phone":"010-1111-1111"}
+    Session Attrs = {}
+
+Handler:
+             Type = com.codestates.srdemoref.member.controller.MemberController
+           Method = com.codestates.srdemoref.member.controller.MemberController#postMember(MemberPostDto)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 201
+    Error message = null
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+     Content type = application/json;charset=UTF-8
+             Body = {"data":{"memberId":4,"email":"hgd01@gmail.com","name":"hong gil dong","phone":"010-1111-1111","memberStatus":"ACTIVE MEMBER"}}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+Hibernate: select memberenti0_.member_id as member_i1_1_, memberenti0_.created_at as created_2_1_, memberenti0_.email as email3_1_, memberenti0_.member_status as member_s4_1_, memberenti0_.name as name5_1_, memberenti0_.phone as phone6_1_, memberenti0_.updated_at as updated_7_1_ from member memberenti0_
+Hibernate: delete from member where member_id=?
+2022-07-11 18:59:42.534  INFO 35302 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@42675041 testClass = MemberControllerTest, testInstance = com.codestates.srdemoref.member.controller.MemberControllerTest@49de4263, testMethod = member_post@MemberControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@15c46930 testClass = MemberControllerTest, locations = '{}', classes = '{class com.codestates.srdemoref.SrDemoRefApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7446d8d5, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@63da79bb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6b9ce1bf, [ImportsContextCustomizer@2c635953 key = [@org.springframework.test.context.BootstrapWith(value=org.springframework.boot.test.context.SpringBootTestContextBootstrapper.class), @org.springframework.context.annotation.Import(value={org.springframework.boot.autoconfigure.ImportAutoConfigurationImportSelector.class}), @org.springframework.boot.autoconfigure.ImportAutoConfiguration(value={}, exclude={}, classes={}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.restdocs", skip=NO), @org.springframework.boot.test.context.SpringBootTest(args={}, webEnvironment=MOCK, value={}, properties={}, classes={}), @org.springframework.boot.test.autoconfigure.restdocs.AutoConfigureRestDocs(uriScheme="http", outputDir="", uriPort=8080, value="", uriHost="localhost"), @org.springframework.context.annotation.Import(value={com.codestates.srdemoref.restDocUtils.RestDocsConfig.class}), @org.springframework.transaction.annotation.Transactional(propagation=REQUIRED, rollbackForClassName={}, readOnly=false, isolation=DEFAULT, transactionManager="", timeoutString="", label={}, noRollbackFor={}, noRollbackForClassName={}, value="", timeout=-1, rollbackFor={}), @org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc(webDriverEnabled=true, print=DEFAULT, webClientEnabled=true, addFilters=true, printOnlyOnFailure=true), @org.springframework.context.annotation.Import(value={org.springframework.boot.test.autoconfigure.restdocs.RestDocumentationContextProviderRegistrar.class}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.mockmvc", skip=NO)]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5b04476e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2783717b, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5ed731d0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@747f281], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]
+2022-07-11 18:59:42.535  INFO 35302 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@42675041 testClass = MemberControllerTest, testInstance = com.codestates.srdemoref.member.controller.MemberControllerTest@6d0ef6dc, testMethod = members_get@MemberControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@15c46930 testClass = MemberControllerTest, locations = '{}', classes = '{class com.codestates.srdemoref.SrDemoRefApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7446d8d5, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@63da79bb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6b9ce1bf, [ImportsContextCustomizer@2c635953 key = [@org.springframework.test.context.BootstrapWith(value=org.springframework.boot.test.context.SpringBootTestContextBootstrapper.class), @org.springframework.context.annotation.Import(value={org.springframework.boot.autoconfigure.ImportAutoConfigurationImportSelector.class}), @org.springframework.boot.autoconfigure.ImportAutoConfiguration(value={}, exclude={}, classes={}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.restdocs", skip=NO), @org.springframework.boot.test.context.SpringBootTest(args={}, webEnvironment=MOCK, value={}, properties={}, classes={}), @org.springframework.boot.test.autoconfigure.restdocs.AutoConfigureRestDocs(uriScheme="http", outputDir="", uriPort=8080, value="", uriHost="localhost"), @org.springframework.context.annotation.Import(value={com.codestates.srdemoref.restDocUtils.RestDocsConfig.class}), @org.springframework.transaction.annotation.Transactional(propagation=REQUIRED, rollbackForClassName={}, readOnly=false, isolation=DEFAULT, transactionManager="", timeoutString="", label={}, noRollbackFor={}, noRollbackForClassName={}, value="", timeout=-1, rollbackFor={}), @org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc(webDriverEnabled=true, print=DEFAULT, webClientEnabled=true, addFilters=true, printOnlyOnFailure=true), @org.springframework.context.annotation.Import(value={org.springframework.boot.test.autoconfigure.restdocs.RestDocumentationContextProviderRegistrar.class}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.mockmvc", skip=NO)]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5b04476e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2783717b, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5ed731d0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@747f281], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@75f9a35a]; rollback [true]
+2022-07-11 18:59:42.536  INFO 35302 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-07-11 18:59:42.536  INFO 35302 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-07-11 18:59:42.536  INFO 35302 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into member (member_id, created_at, email, member_status, name, phone, updated_at) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: select memberenti0_.member_id as member_i1_1_, memberenti0_.created_at as created_2_1_, memberenti0_.email as email3_1_, memberenti0_.member_status as member_s4_1_, memberenti0_.name as name5_1_, memberenti0_.phone as phone6_1_, memberenti0_.updated_at as updated_7_1_ from member memberenti0_ order by memberenti0_.member_id desc limit ?
+Hibernate: select count(memberenti0_.member_id) as col_0_0_ from member memberenti0_
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /members
+       Parameters = {size=[5], page=[1]}
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.codestates.srdemoref.member.controller.MemberController
+           Method = com.codestates.srdemoref.member.controller.MemberController#getMembers(int, int)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+     Content type = application/json;charset=UTF-8
+             Body = {"data":[{"memberId":94,"email":"hgd99@gmail.com","name":"hong gil dong99","phone":"010-1111-1199","memberStatus":"ACTIVE MEMBER"},{"memberId":93,"email":"hgd98@gmail.com","name":"hong gil dong98","phone":"010-1111-1198","memberStatus":"ACTIVE MEMBER"},{"memberId":92,"email":"hgd97@gmail.com","name":"hong gil dong97","phone":"010-1111-1197","memberStatus":"ACTIVE MEMBER"},{"memberId":91,"email":"hgd96@gmail.com","name":"hong gil dong96","phone":"010-1111-1196","memberStatus":"ACTIVE MEMBER"},{"memberId":90,"email":"hgd95@gmail.com","name":"hong gil dong95","phone":"010-1111-1195","memberStatus":"ACTIVE MEMBER"}],"pageInfo":{"page":1,"size":5,"totalElements":90,"totalPages":18}}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+Hibernate: select memberenti0_.member_id as member_i1_1_, memberenti0_.created_at as created_2_1_, memberenti0_.email as email3_1_, memberenti0_.member_status as member_s4_1_, memberenti0_.name as name5_1_, memberenti0_.phone as phone6_1_, memberenti0_.updated_at as updated_7_1_ from member memberenti0_
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+Hibernate: delete from member where member_id=?
+2022-07-11 18:59:42.579  INFO 35302 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@42675041 testClass = MemberControllerTest, testInstance = com.codestates.srdemoref.member.controller.MemberControllerTest@6d0ef6dc, testMethod = members_get@MemberControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@15c46930 testClass = MemberControllerTest, locations = '{}', classes = '{class com.codestates.srdemoref.SrDemoRefApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7446d8d5, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@63da79bb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6b9ce1bf, [ImportsContextCustomizer@2c635953 key = [@org.springframework.test.context.BootstrapWith(value=org.springframework.boot.test.context.SpringBootTestContextBootstrapper.class), @org.springframework.context.annotation.Import(value={org.springframework.boot.autoconfigure.ImportAutoConfigurationImportSelector.class}), @org.springframework.boot.autoconfigure.ImportAutoConfiguration(value={}, exclude={}, classes={}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.restdocs", skip=NO), @org.springframework.boot.test.context.SpringBootTest(args={}, webEnvironment=MOCK, value={}, properties={}, classes={}), @org.springframework.boot.test.autoconfigure.restdocs.AutoConfigureRestDocs(uriScheme="http", outputDir="", uriPort=8080, value="", uriHost="localhost"), @org.springframework.context.annotation.Import(value={com.codestates.srdemoref.restDocUtils.RestDocsConfig.class}), @org.springframework.transaction.annotation.Transactional(propagation=REQUIRED, rollbackForClassName={}, readOnly=false, isolation=DEFAULT, transactionManager="", timeoutString="", label={}, noRollbackFor={}, noRollbackForClassName={}, value="", timeout=-1, rollbackFor={}), @org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc(webDriverEnabled=true, print=DEFAULT, webClientEnabled=true, addFilters=true, printOnlyOnFailure=true), @org.springframework.context.annotation.Import(value={org.springframework.boot.test.autoconfigure.restdocs.RestDocumentationContextProviderRegistrar.class}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.mockmvc", skip=NO)]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5b04476e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2783717b, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5ed731d0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@747f281], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

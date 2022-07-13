@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.codestates.srdemoref.coffee.controller.CoffeeControllerTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-07-11T10:59:42" hostname="Hojinui-MacBookAir.local" time="0.13">
+  <properties/>
+  <testcase name="deleteCoffee()" classname="com.codestates.srdemoref.coffee.controller.CoffeeControllerTest" time="0.015"/>
+  <testcase name="patchCoffee()" classname="com.codestates.srdemoref.coffee.controller.CoffeeControllerTest" time="0.027"/>
+  <testcase name="getCoffee()" classname="com.codestates.srdemoref.coffee.controller.CoffeeControllerTest" time="0.012"/>
+  <testcase name="postCoffee()" classname="com.codestates.srdemoref.coffee.controller.CoffeeControllerTest" time="0.018"/>
+  <testcase name="getCoffees()" classname="com.codestates.srdemoref.coffee.controller.CoffeeControllerTest" time="0.057"/>
+  <system-out><![CDATA[2022-07-11 18:59:42.306  INFO 35302 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.codestates.srdemoref.coffee.controller.CoffeeControllerTest], using SpringBootContextLoader
+2022-07-11 18:59:42.306  INFO 35302 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.codestates.srdemoref.coffee.controller.CoffeeControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-07-11 18:59:42.306  INFO 35302 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.codestates.srdemoref.coffee.controller.CoffeeControllerTest]: CoffeeControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-07-11 18:59:42.312  INFO 35302 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.codestates.srdemoref.SrDemoRefApplication for test class com.codestates.srdemoref.coffee.controller.CoffeeControllerTest
+2022-07-11 18:59:42.312  INFO 35302 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-07-11 18:59:42.312  INFO 35302 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@320bfc61, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3266c7cf, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@157002b7, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@66227940, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@ba76911, org.springframework.test.context.support.DirtiesContextTestExecutionListener@ffb8f15, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1a0b51e7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6f96d39f, org.springframework.test.context.event.EventPublishingTestExecutionListener@5f49c09d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@c197f46, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4c5d934b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@150eab74, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4d2dc60, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@43f670f3, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6311640d]
+2022-07-11 18:59:42.315  INFO 35302 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@41f05f1 testClass = CoffeeControllerTest, testInstance = com.codestates.srdemoref.coffee.controller.CoffeeControllerTest@57cd5cc9, testMethod = deleteCoffee@CoffeeControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@25ee6683 testClass = CoffeeControllerTest, locations = '{}', classes = '{class com.codestates.srdemoref.SrDemoRefApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7446d8d5, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@63da79bb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6b9ce1bf, [ImportsContextCustomizer@44f433db key = [@org.springframework.test.context.BootstrapWith(value=org.springframework.boot.test.context.SpringBootTestContextBootstrapper.class), @org.springframework.context.annotation.Import(value={org.springframework.boot.autoconfigure.ImportAutoConfigurationImportSelector.class}), @org.springframework.boot.autoconfigure.ImportAutoConfiguration(value={}, exclude={}, classes={}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.restdocs", skip=NO), @org.springframework.boot.test.context.SpringBootTest(args={}, webEnvironment=MOCK, value={}, properties={}, classes={}), @org.springframework.boot.test.autoconfigure.restdocs.AutoConfigureRestDocs(uriScheme="http", outputDir="", uriPort=8080, value="", uriHost="localhost"), @org.springframework.context.annotation.Import(value={com.codestates.srdemoref.restDocUtils.RestDocsConfig.class}), @org.springframework.transaction.annotation.Transactional(propagation=REQUIRED, rollbackForClassName={}, readOnly=false, isolation=DEFAULT, transactionManager="", timeoutString="", label={}, noRollbackFor={}, noRollbackForClassName={}, value="", timeout=-1, rollbackFor={}), @org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc(webDriverEnabled=true, print=DEFAULT, webClientEnabled=true, addFilters=true, printOnlyOnFailure=true), @org.springframework.context.annotation.Import(value={org.springframework.boot.test.autoconfigure.restdocs.RestDocumentationContextProviderRegistrar.class}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.mockmvc", skip=NO)]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5b04476e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2783717b, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5ed731d0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@747f281], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@75f9a35a]; rollback [true]
+2022-07-11 18:59:42.315  INFO 35302 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-07-11 18:59:42.315  INFO 35302 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-07-11 18:59:42.316  INFO 35302 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /coffees/1
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.codestates.srdemoref.coffee.controller.CoffeeController
+           Method = com.codestates.srdemoref.coffee.controller.CoffeeController#deleteCoffee(long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 204
+    Error message = null
+          Headers = []
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: select coffeeenti0_.coffee_id as coffee_i1_0_, coffeeenti0_.coffee_code as coffee_c2_0_, coffeeenti0_.coffee_status as coffee_s3_0_, coffeeenti0_.created_at as created_4_0_, coffeeenti0_.eng_name as eng_name5_0_, coffeeenti0_.kor_name as kor_name6_0_, coffeeenti0_.price as price7_0_, coffeeenti0_.updated_at as updated_8_0_ from coffee coffeeenti0_
+2022-07-11 18:59:42.329  INFO 35302 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@41f05f1 testClass = CoffeeControllerTest, testInstance = com.codestates.srdemoref.coffee.controller.CoffeeControllerTest@57cd5cc9, testMethod = deleteCoffee@CoffeeControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@25ee6683 testClass = CoffeeControllerTest, locations = '{}', classes = '{class com.codestates.srdemoref.SrDemoRefApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7446d8d5, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@63da79bb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6b9ce1bf, [ImportsContextCustomizer@44f433db key = [@org.springframework.test.context.BootstrapWith(value=org.springframework.boot.test.context.SpringBootTestContextBootstrapper.class), @org.springframework.context.annotation.Import(value={org.springframework.boot.autoconfigure.ImportAutoConfigurationImportSelector.class}), @org.springframework.boot.autoconfigure.ImportAutoConfiguration(value={}, exclude={}, classes={}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.restdocs", skip=NO), @org.springframework.boot.test.context.SpringBootTest(args={}, webEnvironment=MOCK, value={}, properties={}, classes={}), @org.springframework.boot.test.autoconfigure.restdocs.AutoConfigureRestDocs(uriScheme="http", outputDir="", uriPort=8080, value="", uriHost="localhost"), @org.springframework.context.annotation.Import(value={com.codestates.srdemoref.restDocUtils.RestDocsConfig.class}), @org.springframework.transaction.annotation.Transactional(propagation=REQUIRED, rollbackForClassName={}, readOnly=false, isolation=DEFAULT, transactionManager="", timeoutString="", label={}, noRollbackFor={}, noRollbackForClassName={}, value="", timeout=-1, rollbackFor={}), @org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc(webDriverEnabled=true, print=DEFAULT, webClientEnabled=true, addFilters=true, printOnlyOnFailure=true), @org.springframework.context.annotation.Import(value={org.springframework.boot.test.autoconfigure.restdocs.RestDocumentationContextProviderRegistrar.class}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.mockmvc", skip=NO)]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5b04476e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2783717b, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5ed731d0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@747f281], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]
+2022-07-11 18:59:42.330  INFO 35302 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@41f05f1 testClass = CoffeeControllerTest, testInstance = com.codestates.srdemoref.coffee.controller.CoffeeControllerTest@54980154, testMethod = patchCoffee@CoffeeControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@25ee6683 testClass = CoffeeControllerTest, locations = '{}', classes = '{class com.codestates.srdemoref.SrDemoRefApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7446d8d5, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@63da79bb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6b9ce1bf, [ImportsContextCustomizer@44f433db key = [@org.springframework.test.context.BootstrapWith(value=org.springframework.boot.test.context.SpringBootTestContextBootstrapper.class), @org.springframework.context.annotation.Import(value={org.springframework.boot.autoconfigure.ImportAutoConfigurationImportSelector.class}), @org.springframework.boot.autoconfigure.ImportAutoConfiguration(value={}, exclude={}, classes={}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.restdocs", skip=NO), @org.springframework.boot.test.context.SpringBootTest(args={}, webEnvironment=MOCK, value={}, properties={}, classes={}), @org.springframework.boot.test.autoconfigure.restdocs.AutoConfigureRestDocs(uriScheme="http", outputDir="", uriPort=8080, value="", uriHost="localhost"), @org.springframework.context.annotation.Import(value={com.codestates.srdemoref.restDocUtils.RestDocsConfig.class}), @org.springframework.transaction.annotation.Transactional(propagation=REQUIRED, rollbackForClassName={}, readOnly=false, isolation=DEFAULT, transactionManager="", timeoutString="", label={}, noRollbackFor={}, noRollbackForClassName={}, value="", timeout=-1, rollbackFor={}), @org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc(webDriverEnabled=true, print=DEFAULT, webClientEnabled=true, addFilters=true, printOnlyOnFailure=true), @org.springframework.context.annotation.Import(value={org.springframework.boot.test.autoconfigure.restdocs.RestDocumentationContextProviderRegistrar.class}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.mockmvc", skip=NO)]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5b04476e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2783717b, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5ed731d0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@747f281], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@75f9a35a]; rollback [true]
+2022-07-11 18:59:42.331  INFO 35302 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-07-11 18:59:42.331  INFO 35302 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-07-11 18:59:42.331  INFO 35302 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+
+MockHttpServletRequest:
+      HTTP Method = PATCH
+      Request URI = /coffees/2
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"129"]
+             Body = {"coffeeId":2,"korName":"아메리카노","engName":"Americano","price":2500,"coffeeStatus":"COFFEE_SOLD_OUT","coffeeCode":"aaa"}
+    Session Attrs = {}
+
+Handler:
+             Type = com.codestates.srdemoref.coffee.controller.CoffeeController
+           Method = com.codestates.srdemoref.coffee.controller.CoffeeController#patchCoffee(long, CoffeePatchDto)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+     Content type = application/json;charset=UTF-8
+             Body = {"data":{"coffeeId":2,"korName":"아메리카노","engName":"Americano","price":2500,"coffeeStatus":"OUT OF STOCK"}}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+Hibernate: update coffee set coffee_code=?, coffee_status=?, created_at=?, eng_name=?, kor_name=?, price=?, updated_at=? where coffee_id=?
+Hibernate: select coffeeenti0_.coffee_id as coffee_i1_0_, coffeeenti0_.coffee_code as coffee_c2_0_, coffeeenti0_.coffee_status as coffee_s3_0_, coffeeenti0_.created_at as created_4_0_, coffeeenti0_.eng_name as eng_name5_0_, coffeeenti0_.kor_name as kor_name6_0_, coffeeenti0_.price as price7_0_, coffeeenti0_.updated_at as updated_8_0_ from coffee coffeeenti0_
+Hibernate: delete from coffee where coffee_id=?
+2022-07-11 18:59:42.357  INFO 35302 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@41f05f1 testClass = CoffeeControllerTest, testInstance = com.codestates.srdemoref.coffee.controller.CoffeeControllerTest@54980154, testMethod = patchCoffee@CoffeeControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@25ee6683 testClass = CoffeeControllerTest, locations = '{}', classes = '{class com.codestates.srdemoref.SrDemoRefApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7446d8d5, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@63da79bb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6b9ce1bf, [ImportsContextCustomizer@44f433db key = [@org.springframework.test.context.BootstrapWith(value=org.springframework.boot.test.context.SpringBootTestContextBootstrapper.class), @org.springframework.context.annotation.Import(value={org.springframework.boot.autoconfigure.ImportAutoConfigurationImportSelector.class}), @org.springframework.boot.autoconfigure.ImportAutoConfiguration(value={}, exclude={}, classes={}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.restdocs", skip=NO), @org.springframework.boot.test.context.SpringBootTest(args={}, webEnvironment=MOCK, value={}, properties={}, classes={}), @org.springframework.boot.test.autoconfigure.restdocs.AutoConfigureRestDocs(uriScheme="http", outputDir="", uriPort=8080, value="", uriHost="localhost"), @org.springframework.context.annotation.Import(value={com.codestates.srdemoref.restDocUtils.RestDocsConfig.class}), @org.springframework.transaction.annotation.Transactional(propagation=REQUIRED, rollbackForClassName={}, readOnly=false, isolation=DEFAULT, transactionManager="", timeoutString="", label={}, noRollbackFor={}, noRollbackForClassName={}, value="", timeout=-1, rollbackFor={}), @org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc(webDriverEnabled=true, print=DEFAULT, webClientEnabled=true, addFilters=true, printOnlyOnFailure=true), @org.springframework.context.annotation.Import(value={org.springframework.boot.test.autoconfigure.restdocs.RestDocumentationContextProviderRegistrar.class}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.mockmvc", skip=NO)]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5b04476e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2783717b, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5ed731d0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@747f281], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]
+2022-07-11 18:59:42.358  INFO 35302 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@41f05f1 testClass = CoffeeControllerTest, testInstance = com.codestates.srdemoref.coffee.controller.CoffeeControllerTest@3609b8f2, testMethod = getCoffee@CoffeeControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@25ee6683 testClass = CoffeeControllerTest, locations = '{}', classes = '{class com.codestates.srdemoref.SrDemoRefApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7446d8d5, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@63da79bb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6b9ce1bf, [ImportsContextCustomizer@44f433db key = [@org.springframework.test.context.BootstrapWith(value=org.springframework.boot.test.context.SpringBootTestContextBootstrapper.class), @org.springframework.context.annotation.Import(value={org.springframework.boot.autoconfigure.ImportAutoConfigurationImportSelector.class}), @org.springframework.boot.autoconfigure.ImportAutoConfiguration(value={}, exclude={}, classes={}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.restdocs", skip=NO), @org.springframework.boot.test.context.SpringBootTest(args={}, webEnvironment=MOCK, value={}, properties={}, classes={}), @org.springframework.boot.test.autoconfigure.restdocs.AutoConfigureRestDocs(uriScheme="http", outputDir="", uriPort=8080, value="", uriHost="localhost"), @org.springframework.context.annotation.Import(value={com.codestates.srdemoref.restDocUtils.RestDocsConfig.class}), @org.springframework.transaction.annotation.Transactional(propagation=REQUIRED, rollbackForClassName={}, readOnly=false, isolation=DEFAULT, transactionManager="", timeoutString="", label={}, noRollbackFor={}, noRollbackForClassName={}, value="", timeout=-1, rollbackFor={}), @org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc(webDriverEnabled=true, print=DEFAULT, webClientEnabled=true, addFilters=true, printOnlyOnFailure=true), @org.springframework.context.annotation.Import(value={org.springframework.boot.test.autoconfigure.restdocs.RestDocumentationContextProviderRegistrar.class}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.mockmvc", skip=NO)]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5b04476e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2783717b, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5ed731d0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@747f281], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@75f9a35a]; rollback [true]
+2022-07-11 18:59:42.359  INFO 35302 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-07-11 18:59:42.359  INFO 35302 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-07-11 18:59:42.359  INFO 35302 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select coffeeenti0_.coffee_id as coffee_i1_0_, coffeeenti0_.coffee_code as coffee_c2_0_, coffeeenti0_.coffee_status as coffee_s3_0_, coffeeenti0_.created_at as created_4_0_, coffeeenti0_.eng_name as eng_name5_0_, coffeeenti0_.kor_name as kor_name6_0_, coffeeenti0_.price as price7_0_, coffeeenti0_.updated_at as updated_8_0_ from coffee coffeeenti0_ where coffeeenti0_.coffee_id=?
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /coffees/3
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.codestates.srdemoref.coffee.controller.CoffeeController
+           Method = com.codestates.srdemoref.coffee.controller.CoffeeController#getCoffee(long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+     Content type = application/json;charset=UTF-8
+             Body = {"data":{"coffeeId":3,"korName":"아메리카노","engName":"Americano","price":2500,"coffeeStatus":"FOR SALE"}}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+Hibernate: select coffeeenti0_.coffee_id as coffee_i1_0_, coffeeenti0_.coffee_code as coffee_c2_0_, coffeeenti0_.coffee_status as coffee_s3_0_, coffeeenti0_.created_at as created_4_0_, coffeeenti0_.eng_name as eng_name5_0_, coffeeenti0_.kor_name as kor_name6_0_, coffeeenti0_.price as price7_0_, coffeeenti0_.updated_at as updated_8_0_ from coffee coffeeenti0_
+Hibernate: delete from coffee where coffee_id=?
+2022-07-11 18:59:42.369  INFO 35302 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@41f05f1 testClass = CoffeeControllerTest, testInstance = com.codestates.srdemoref.coffee.controller.CoffeeControllerTest@3609b8f2, testMethod = getCoffee@CoffeeControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@25ee6683 testClass = CoffeeControllerTest, locations = '{}', classes = '{class com.codestates.srdemoref.SrDemoRefApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7446d8d5, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@63da79bb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6b9ce1bf, [ImportsContextCustomizer@44f433db key = [@org.springframework.test.context.BootstrapWith(value=org.springframework.boot.test.context.SpringBootTestContextBootstrapper.class), @org.springframework.context.annotation.Import(value={org.springframework.boot.autoconfigure.ImportAutoConfigurationImportSelector.class}), @org.springframework.boot.autoconfigure.ImportAutoConfiguration(value={}, exclude={}, classes={}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.restdocs", skip=NO), @org.springframework.boot.test.context.SpringBootTest(args={}, webEnvironment=MOCK, value={}, properties={}, classes={}), @org.springframework.boot.test.autoconfigure.restdocs.AutoConfigureRestDocs(uriScheme="http", outputDir="", uriPort=8080, value="", uriHost="localhost"), @org.springframework.context.annotation.Import(value={com.codestates.srdemoref.restDocUtils.RestDocsConfig.class}), @org.springframework.transaction.annotation.Transactional(propagation=REQUIRED, rollbackForClassName={}, readOnly=false, isolation=DEFAULT, transactionManager="", timeoutString="", label={}, noRollbackFor={}, noRollbackForClassName={}, value="", timeout=-1, rollbackFor={}), @org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc(webDriverEnabled=true, print=DEFAULT, webClientEnabled=true, addFilters=true, printOnlyOnFailure=true), @org.springframework.context.annotation.Import(value={org.springframework.boot.test.autoconfigure.restdocs.RestDocumentationContextProviderRegistrar.class}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.mockmvc", skip=NO)]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5b04476e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2783717b, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5ed731d0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@747f281], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]
+2022-07-11 18:59:42.370  INFO 35302 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@41f05f1 testClass = CoffeeControllerTest, testInstance = com.codestates.srdemoref.coffee.controller.CoffeeControllerTest@72d4d9ac, testMethod = postCoffee@CoffeeControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@25ee6683 testClass = CoffeeControllerTest, locations = '{}', classes = '{class com.codestates.srdemoref.SrDemoRefApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7446d8d5, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@63da79bb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6b9ce1bf, [ImportsContextCustomizer@44f433db key = [@org.springframework.test.context.BootstrapWith(value=org.springframework.boot.test.context.SpringBootTestContextBootstrapper.class), @org.springframework.context.annotation.Import(value={org.springframework.boot.autoconfigure.ImportAutoConfigurationImportSelector.class}), @org.springframework.boot.autoconfigure.ImportAutoConfiguration(value={}, exclude={}, classes={}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.restdocs", skip=NO), @org.springframework.boot.test.context.SpringBootTest(args={}, webEnvironment=MOCK, value={}, properties={}, classes={}), @org.springframework.boot.test.autoconfigure.restdocs.AutoConfigureRestDocs(uriScheme="http", outputDir="", uriPort=8080, value="", uriHost="localhost"), @org.springframework.context.annotation.Import(value={com.codestates.srdemoref.restDocUtils.RestDocsConfig.class}), @org.springframework.transaction.annotation.Transactional(propagation=REQUIRED, rollbackForClassName={}, readOnly=false, isolation=DEFAULT, transactionManager="", timeoutString="", label={}, noRollbackFor={}, noRollbackForClassName={}, value="", timeout=-1, rollbackFor={}), @org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc(webDriverEnabled=true, print=DEFAULT, webClientEnabled=true, addFilters=true, printOnlyOnFailure=true), @org.springframework.context.annotation.Import(value={org.springframework.boot.test.autoconfigure.restdocs.RestDocumentationContextProviderRegistrar.class}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.mockmvc", skip=NO)]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5b04476e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2783717b, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5ed731d0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@747f281], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@75f9a35a]; rollback [true]
+2022-07-11 18:59:42.371  INFO 35302 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-07-11 18:59:42.371  INFO 35302 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-07-11 18:59:42.372  INFO 35302 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+Hibernate: select coffeeenti0_.coffee_id as coffee_i1_0_, coffeeenti0_.coffee_code as coffee_c2_0_, coffeeenti0_.coffee_status as coffee_s3_0_, coffeeenti0_.created_at as created_4_0_, coffeeenti0_.eng_name as eng_name5_0_, coffeeenti0_.kor_name as kor_name6_0_, coffeeenti0_.price as price7_0_, coffeeenti0_.updated_at as updated_8_0_ from coffee coffeeenti0_ where coffeeenti0_.coffee_code=?
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /coffees
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"83"]
+             Body = {"korName":"아메리카노","engName":"Americano","price":2500,"coffeeCode":"aaa"}
+    Session Attrs = {}
+
+Handler:
+             Type = com.codestates.srdemoref.coffee.controller.CoffeeController
+           Method = com.codestates.srdemoref.coffee.controller.CoffeeController#postCoffee(CoffeePostDto)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 201
+    Error message = null
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+     Content type = application/json;charset=UTF-8
+             Body = {"data":{"coffeeId":4,"korName":"아메리카노","engName":"Americano","price":2500,"coffeeStatus":"FOR SALE"}}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+Hibernate: select coffeeenti0_.coffee_id as coffee_i1_0_, coffeeenti0_.coffee_code as coffee_c2_0_, coffeeenti0_.coffee_status as coffee_s3_0_, coffeeenti0_.created_at as created_4_0_, coffeeenti0_.eng_name as eng_name5_0_, coffeeenti0_.kor_name as kor_name6_0_, coffeeenti0_.price as price7_0_, coffeeenti0_.updated_at as updated_8_0_ from coffee coffeeenti0_
+Hibernate: delete from coffee where coffee_id=?
+2022-07-11 18:59:42.387  INFO 35302 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@41f05f1 testClass = CoffeeControllerTest, testInstance = com.codestates.srdemoref.coffee.controller.CoffeeControllerTest@72d4d9ac, testMethod = postCoffee@CoffeeControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@25ee6683 testClass = CoffeeControllerTest, locations = '{}', classes = '{class com.codestates.srdemoref.SrDemoRefApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7446d8d5, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@63da79bb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6b9ce1bf, [ImportsContextCustomizer@44f433db key = [@org.springframework.test.context.BootstrapWith(value=org.springframework.boot.test.context.SpringBootTestContextBootstrapper.class), @org.springframework.context.annotation.Import(value={org.springframework.boot.autoconfigure.ImportAutoConfigurationImportSelector.class}), @org.springframework.boot.autoconfigure.ImportAutoConfiguration(value={}, exclude={}, classes={}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.restdocs", skip=NO), @org.springframework.boot.test.context.SpringBootTest(args={}, webEnvironment=MOCK, value={}, properties={}, classes={}), @org.springframework.boot.test.autoconfigure.restdocs.AutoConfigureRestDocs(uriScheme="http", outputDir="", uriPort=8080, value="", uriHost="localhost"), @org.springframework.context.annotation.Import(value={com.codestates.srdemoref.restDocUtils.RestDocsConfig.class}), @org.springframework.transaction.annotation.Transactional(propagation=REQUIRED, rollbackForClassName={}, readOnly=false, isolation=DEFAULT, transactionManager="", timeoutString="", label={}, noRollbackFor={}, noRollbackForClassName={}, value="", timeout=-1, rollbackFor={}), @org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc(webDriverEnabled=true, print=DEFAULT, webClientEnabled=true, addFilters=true, printOnlyOnFailure=true), @org.springframework.context.annotation.Import(value={org.springframework.boot.test.autoconfigure.restdocs.RestDocumentationContextProviderRegistrar.class}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.mockmvc", skip=NO)]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5b04476e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2783717b, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5ed731d0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@747f281], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]
+2022-07-11 18:59:42.388  INFO 35302 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@41f05f1 testClass = CoffeeControllerTest, testInstance = com.codestates.srdemoref.coffee.controller.CoffeeControllerTest@1a26eecb, testMethod = getCoffees@CoffeeControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@25ee6683 testClass = CoffeeControllerTest, locations = '{}', classes = '{class com.codestates.srdemoref.SrDemoRefApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7446d8d5, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@63da79bb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6b9ce1bf, [ImportsContextCustomizer@44f433db key = [@org.springframework.test.context.BootstrapWith(value=org.springframework.boot.test.context.SpringBootTestContextBootstrapper.class), @org.springframework.context.annotation.Import(value={org.springframework.boot.autoconfigure.ImportAutoConfigurationImportSelector.class}), @org.springframework.boot.autoconfigure.ImportAutoConfiguration(value={}, exclude={}, classes={}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.restdocs", skip=NO), @org.springframework.boot.test.context.SpringBootTest(args={}, webEnvironment=MOCK, value={}, properties={}, classes={}), @org.springframework.boot.test.autoconfigure.restdocs.AutoConfigureRestDocs(uriScheme="http", outputDir="", uriPort=8080, value="", uriHost="localhost"), @org.springframework.context.annotation.Import(value={com.codestates.srdemoref.restDocUtils.RestDocsConfig.class}), @org.springframework.transaction.annotation.Transactional(propagation=REQUIRED, rollbackForClassName={}, readOnly=false, isolation=DEFAULT, transactionManager="", timeoutString="", label={}, noRollbackFor={}, noRollbackForClassName={}, value="", timeout=-1, rollbackFor={}), @org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc(webDriverEnabled=true, print=DEFAULT, webClientEnabled=true, addFilters=true, printOnlyOnFailure=true), @org.springframework.context.annotation.Import(value={org.springframework.boot.test.autoconfigure.restdocs.RestDocumentationContextProviderRegistrar.class}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.mockmvc", skip=NO)]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5b04476e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2783717b, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5ed731d0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@747f281], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@75f9a35a]; rollback [true]
+2022-07-11 18:59:42.389  INFO 35302 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-07-11 18:59:42.389  INFO 35302 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-07-11 18:59:42.389  INFO 35302 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coffee (coffee_id, coffee_code, coffee_status, created_at, eng_name, kor_name, price, updated_at) values (default, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select coffeeenti0_.coffee_id as coffee_i1_0_, coffeeenti0_.coffee_code as coffee_c2_0_, coffeeenti0_.coffee_status as coffee_s3_0_, coffeeenti0_.created_at as created_4_0_, coffeeenti0_.eng_name as eng_name5_0_, coffeeenti0_.kor_name as kor_name6_0_, coffeeenti0_.price as price7_0_, coffeeenti0_.updated_at as updated_8_0_ from coffee coffeeenti0_ order by coffeeenti0_.coffee_id desc limit ?
+Hibernate: select count(coffeeenti0_.coffee_id) as col_0_0_ from coffee coffeeenti0_
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /coffees
+       Parameters = {size=[5], page=[1]}
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.codestates.srdemoref.coffee.controller.CoffeeController
+           Method = com.codestates.srdemoref.coffee.controller.CoffeeController#getCoffees(int, int)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+     Content type = application/json;charset=UTF-8
+             Body = {"data":[{"coffeeId":94,"korName":"아메리카노99","engName":"Americano","price":2599,"coffeeStatus":"FOR SALE"},{"coffeeId":93,"korName":"아메리카노98","engName":"Americano","price":2598,"coffeeStatus":"FOR SALE"},{"coffeeId":92,"korName":"아메리카노97","engName":"Americano","price":2597,"coffeeStatus":"FOR SALE"},{"coffeeId":91,"korName":"아메리카노96","engName":"Americano","price":2596,"coffeeStatus":"FOR SALE"},{"coffeeId":90,"korName":"아메리카노95","engName":"Americano","price":2595,"coffeeStatus":"FOR SALE"}],"pageInfo":{"page":1,"size":5,"totalElements":90,"totalPages":18}}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+Hibernate: select coffeeenti0_.coffee_id as coffee_i1_0_, coffeeenti0_.coffee_code as coffee_c2_0_, coffeeenti0_.coffee_status as coffee_s3_0_, coffeeenti0_.created_at as created_4_0_, coffeeenti0_.eng_name as eng_name5_0_, coffeeenti0_.kor_name as kor_name6_0_, coffeeenti0_.price as price7_0_, coffeeenti0_.updated_at as updated_8_0_ from coffee coffeeenti0_
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+Hibernate: delete from coffee where coffee_id=?
+2022-07-11 18:59:42.444  INFO 35302 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@41f05f1 testClass = CoffeeControllerTest, testInstance = com.codestates.srdemoref.coffee.controller.CoffeeControllerTest@1a26eecb, testMethod = getCoffees@CoffeeControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@25ee6683 testClass = CoffeeControllerTest, locations = '{}', classes = '{class com.codestates.srdemoref.SrDemoRefApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7446d8d5, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@63da79bb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6b9ce1bf, [ImportsContextCustomizer@44f433db key = [@org.springframework.test.context.BootstrapWith(value=org.springframework.boot.test.context.SpringBootTestContextBootstrapper.class), @org.springframework.context.annotation.Import(value={org.springframework.boot.autoconfigure.ImportAutoConfigurationImportSelector.class}), @org.springframework.boot.autoconfigure.ImportAutoConfiguration(value={}, exclude={}, classes={}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.restdocs", skip=NO), @org.springframework.boot.test.context.SpringBootTest(args={}, webEnvironment=MOCK, value={}, properties={}, classes={}), @org.springframework.boot.test.autoconfigure.restdocs.AutoConfigureRestDocs(uriScheme="http", outputDir="", uriPort=8080, value="", uriHost="localhost"), @org.springframework.context.annotation.Import(value={com.codestates.srdemoref.restDocUtils.RestDocsConfig.class}), @org.springframework.transaction.annotation.Transactional(propagation=REQUIRED, rollbackForClassName={}, readOnly=false, isolation=DEFAULT, transactionManager="", timeoutString="", label={}, noRollbackFor={}, noRollbackForClassName={}, value="", timeout=-1, rollbackFor={}), @org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc(webDriverEnabled=true, print=DEFAULT, webClientEnabled=true, addFilters=true, printOnlyOnFailure=true), @org.springframework.context.annotation.Import(value={org.springframework.boot.test.autoconfigure.restdocs.RestDocumentationContextProviderRegistrar.class}), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(value="spring.test.mockmvc", skip=NO)]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5b04476e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2783717b, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5ed731d0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@747f281], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

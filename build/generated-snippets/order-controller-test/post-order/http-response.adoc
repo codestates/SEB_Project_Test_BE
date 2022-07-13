@@ -1,0 +1,22 @@
+[source,http,options="nowrap"]
+----
+HTTP/1.1 201 Created
+Content-Type: application/json;charset=UTF-8
+Content-Length: 312
+
+{
+  "data" : {
+    "orderId" : 14,
+    "memberId" : 5,
+    "orderStatus" : "ORDER_REQUEST",
+    "orderCoffees" : [ {
+      "coffeeId" : 5,
+      "korName" : "아메리카노1",
+      "engName" : "Americano",
+      "price" : 2500,
+      "quantity" : 3
+    } ],
+    "createdAt" : "2022-07-12T14:46:45.449116"
+  }
+}
+----
