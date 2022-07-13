@@ -1,9 +1,0 @@
-[source,bash]
-----
-$ curl 'http://localhost:8080/orders/12' -i -X PATCH \
-    -H 'Content-Type: application/json;charset=UTF-8' \
-    -d '{
-  "orderId" : 12,
-  "orderStatus" : "ORDER_CANCEL"
-}'
-----

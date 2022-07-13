@@ -1,8 +1,0 @@
-.+http://localhost:8080/orders/{order-id}+
-|===
-|Parameter|Description
-
-|`+order-id+`
-|orderId
-
-|===
