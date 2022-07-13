@@ -1,0 +1,38 @@
+package com.codestates.srdemoref.coffee.dto;
+
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import org.hibernate.validator.constraints.Range;
+
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Pattern;
+
+@Getter
+@NoArgsConstructor
+public class CoffeePostDto {
+    @NotBlank
+    private String korName;
+
+    @NotBlank
+    @Pattern(regexp = "^([A-Za-z])(\\s?[A-Za-z])*$",
+            message = "커피명(영문)은 영문이어야 합니다(단어 사이 공백 한 칸 포함). 예) Cafe Latte")
+    private String engName;
+
+    @Range(min= 100, max= 50000)
+    private int price;
+
+    @NotBlank
+//    @Pattern(regexp = "^([A-Za-z]){3}$",
+//            message = "커피 코드는 3자리 영문이어야 합니다.")
+    private String coffeeCode;
+
+    @Builder
+    CoffeePostDto(String korName, String engName, int price, String coffeeCode) {
+        this.korName = korName;
+        this.engName = engName;
+        this.price = price;
+        this.coffeeCode = coffeeCode;
+    }
+}
