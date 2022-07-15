@@ -6,6 +6,7 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.hibernate.validator.constraints.Range;
+import org.springframework.lang.Nullable;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
@@ -26,6 +27,7 @@ public class CoffeePatchDto {
     private int price;
 
     // TODO 추가된 부분. 커피 상태 값을 사전에 체크하는 Custom Validator를 만들수도 있다.
+//    @Nullable
     private CoffeeEntity.CoffeeStatus coffeeStatus;
 
     @NotBlank

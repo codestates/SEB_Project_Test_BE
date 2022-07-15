@@ -109,10 +109,12 @@ class CoffeeControllerTest extends RestDocsTestSupport {
 
         String url = "http://localhost:8080/coffees";
 
-        coffeeRepository.save(coffeeMapper.coffeePostDtoToCoffee(coffeePostDto));
+        CoffeeEntity coffee = coffeeRepository.save(coffeeMapper.coffeePostDtoToCoffee(coffeePostDto));
 
-        long coffeeId = 2L;
+        long coffeeId = coffee.getCoffeeId();
         CoffeeEntity.CoffeeStatus coffeeStatus = CoffeeEntity.CoffeeStatus.COFFEE_SOLD_OUT;
+
+//        CoffeeEntity.CoffeeStatus coffeeStatus = null;
 
         CoffeePatchDto coffeePatchDto = CoffeePatchDto.builder()
                 .coffeeId(coffeeId)
