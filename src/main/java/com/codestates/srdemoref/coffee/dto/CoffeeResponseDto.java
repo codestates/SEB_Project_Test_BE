@@ -15,6 +15,7 @@ public class CoffeeResponseDto {
     private int price;
     private CoffeeEntity.CoffeeStatus coffeeStatus; // 커피 상태 추가
 
+
     public String getCoffeeStatus() {
         return coffeeStatus.getStatus();
     }
